@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script>
+		function openItem(evt, ItemName) {
+		  var i, tabcontent, tablinks;
+		  tabcontent = document.getElementsByClassName("tabcontent");
+		  for (i = 0; i < tabcontent.length; i++) {
+		    tabcontent[i].style.display = "none";
+		  }
+		  tablinks = document.getElementsByClassName("tablinks");
+		  for (i = 0; i < tablinks.length; i++) {
+		    tablinks[i].className = tablinks[i].className.replace(" active", "");
+		  }
+		  document.getElementById(ItemName).style.display = "block";
+		  evt.currentTarget.className += " active";
+		}
+		</script>
+
+		<title>My Shipyard's Website</title>
+		<meta charset="utf-8">
+   
+   		<link rel="stylesheet" type="text/css" href="stiller/stil_ana.css">
+	
+	</head>
+
+	<body>
+		
+		<div id="ana_div">
+
+			<div id="menu" style="margin-top: 3px; margin-bottom: 3px;">
+				<img src="resimler/shipyard_logo.png" style="width: 40px; height: auto; vertical-align: top; padding: 0px; margin: 0px;">	<a href="index.html">HOME</a> |  
+				<a href="about_us.html">ABOUT US</a> | 
+				<a href="working_fields.html">WORKING FIELDS</a> |  
+				<a href="contact.html">CONTACT</a> |
+				<a href="">View Site in Porteguese  <img src="resimler/portekiz.jpg" style="width: 25px; height: auto; "></img></a>
+
+			</div>
+			
+			<img src="resimler/tersane.jpg" width="900" height="388">
+
+
+
+
+			<div id="index_metin">
+			
+				<h1 align="center">Welcome to My Shipyard!</h1>
+
+					<div class="tab">
+ 						 <button class="tablinks" onclick="openItem(event, 'Scraper')" id="defaultOpen">Scraper</button>
+  						 <button class="tablinks" onclick="openItem(event, 'Painting')">Painting</button>
+ 						 <button class="tablinks" onclick="openItem(event, 'Manufacturing')">Manufacturing</button>
+ 			 			 <button class="tablinks" onclick="openItem(event, 'Wet_Docking')">Wet Docking</button>		
+ 			 			 <button class="tablinks" onclick="openItem(event, 'Rigger')">Rigger</button>	 
+					</div>
+
+					<div id="Scraper" class="tabcontent">
+					  <h3 align="center">Scraper</h3>
+					  <img src="resimler/raspa.jpg" style="height: 185px; width: auto;">
+					  <p>Rinse objects and place them on drying racks; or use cloth, squeegees, or air compressors to dry surfaces.</p>
+					  <p>Coordinated and planned work requirements with other civil engineering and base agencies.</p>
+					  <p>Used common hand tools, plasma cutters, and grinders to quickly and safely remove material.</p>
+					  <p>Install different types of fencing to include chain link and landscaping fences.</p>
+					</div>
+
+					<div id="Painting" class="tabcontent">
+					  <h3>Painting</h3>
+					  <img src="resimler/gemi_boya.png" style="height: 185px; width: auto;">
+					  <p>Rinse objects and place them on drying racks; or use cloth, squeegees, or air compressors to dry surfaces.</p>
+					  <p>Coordinated and planned work requirements with other civil engineering and base agencies.</p>
+					  <p>Used common hand tools, plasma cutters, and grinders to quickly and safely remove material.</p>
+					  <p>Install different types of fencing to include chain link and landscaping fences.</p>
+					</div>
+
+					<div id="Manufacturing" class="tabcontent">
+					  <h3>Manufacturing</h3>
+					  <img src="resimler/manufacture.png" style="height: 185px; width: auto;">
+					  <p>Rinse objects and place them on drying racks; or use cloth, squeegees, or air compressors to dry surfaces.</p>
+					  <p>Coordinated and planned work requirements with other civil engineering and base agencies.</p>
+					  <p>Used common hand tools, plasma cutters, and grinders to quickly and safely remove material.</p>
+					  <p>Install different types of fencing to include chain link and landscaping fences.</p>
+					</div>
+					<div id="Wet_Docking" class="tabcontent">
+					  <h3>Wet_Docking</h3>
+					  <img src="resimler/wet_dock.jpg" style="height: 185px; width: auto;">
+					  <p>Rinse objects and place them on drying racks; or use cloth, squeegees, or air compressors to dry surfaces.</p>
+					  <p>Coordinated and planned work requirements with other civil engineering and base agencies.</p>
+					  <p>Used common hand tools, plasma cutters, and grinders to quickly and safely remove material.</p>
+					  <p>Install different types of fencing to include chain link and landscaping fences.</p>
+					</div>
+					<div id="Rigger" class="tabcontent">
+					  <h3>Rigger</h3>
+					  <img src="resimler/rigger.jpg" style="height: 185px; width: auto;">
+					  <p>Rinse objects and place them on drying racks; or use cloth, squeegees, or air compressors to dry surfaces.</p>
+					  <p>Coordinated and planned work requirements with other civil engineering and base agencies.</p>
+					  <p>Used common hand tools, plasma cutters, and grinders to quickly and safely remove material.</p>
+					  <p>Install different types of fencing to include chain link and landscaping fences.</p>
+					</div>
+
+				<script type="text/javascript">
+					// Get the element with id="defaultOpen" and click on it
+					document.getElementById("defaultOpen").click();
+				</script>
+			</div>
+
+			<div>
+			 <h4 class="footer">All rights reserved to My Shipyard ©</h4> 
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
